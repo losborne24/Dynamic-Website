@@ -1,0 +1,97 @@
+.navbar{background:transparent;font-size:16px;position: fixed; width:100%;z-index: 500 !important}
+.nav-item::after{content:'';display:block;width:0px;height:5px;background:#7E317B;transition: 0.2s;}
+.nav-item:hover::after{width:100%;}
+/*.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#7E317B !important;}*/
+.nav-link{padding:5px 5px;transition:0.2s; color: #eeeeee !important;cursor: pointer;}
+.dropdown-item.active, .dropdown-item:active{color:#eeeeee !important;}
+.dropdown-item:focus, .dropdown-item:hover{background:#7E317B;color: #eeeeee;}
+.dropdown-menu {background-color: #111111;}
+.dropdown-item {color: #eeeeee !important;cursor: pointer;}
+#btn-edit{position:absolute; top:10px; right:10px;  font-weight: bold;}
+/*#btn-edit{padding-left: 100px;}*/
+
+ul {list-style-type: none; padding-left:  0px;}
+body {
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #eeeeee;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media (min-width: 0px) {
+  .navbar img{   width: 30px;   height:30px;  }
+  .navbar-nav li img {  width: 0px;  height: 0px;  }
+}
+@media (min-width: 992px) {
+  .navbar-nav {  list-style-type: none;   max-height: 40px;}
+  .navbar-nav li {display: inline;  padding-right: 10px;}
+  .navbar-nav li img {
+    /* aligns the image with the top of the content in the nav bar */
+    vertical-align: top;
+    /* modifying width also modifies separation to nav links */
+    width: 180px;
+    /* modify height to show more/less of logo */
+    height: 180px;
+    margin-left: 0px;
+  }
+  .ml-md-auto{
+    margin-left: auto!important;
+  }
+}
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 195px;
+  position: fixed;
+  left: -150px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa-2x {color: #fff;  padding: 10px 0;  width: 40px;  margin-left: 8px;}
+
+.fl-fl:hover {  left: 0;}
+
+.fl-fl i {
+  float: right;
+  padding-left: 10px;
+}
+
+.fl-fl a {
+  float: right;
+  color: #fff !important;
+  text-decoration: none;
+  text-align:  left;
+  line-height: 43px!important;
+  vertical-align: top!important;
+ /* padding-left: 50px;*/
+}
+
+.float-fb { top: 200px; background: #000000;}
+.float-tw { top: 255px; background: #000000;}
+.float-ig { top: 310px; background: #000000;}
+.float-fbTD { top: 420px; background: #7E317B;}
+.float-twTD { top: 475px; background: #7E317B;}
+.float-igTD { top: 530px; background: #7E317B;}
+.float-glTD { top: 585px; background: #7E317B;}
+
+
+
+.btn-dark{
+  width: 100%;
+  padding: 16px 0;
+  cursor: pointer;
+  background: #7E317B;
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  appearance: none;
+}
+
