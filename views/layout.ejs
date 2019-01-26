@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- link CDN css files here -->
+    <link rel="stylesheet" href="/cssFiles/bootstrap.min.css">
+    <!-- Optional Theme -->
+    <link rel="stylesheet" href="/cssFiles/main.css">        
+    <!-- JS files should be linked at bottom of the page -->
+        <script src="/jsFiles/jquery.min.js"></script>
+
+    <script src="/jsFiles/bootstrap.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="/imgFiles/TDlogo.png"alt="" height="30" width="30">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ">
+          <li><img src="imgFiles/TDlogo.png"alt=""></li>
+          <li class="nav-item active">
+            <a class="nav-link" id="home" >Home <span class="sr-only">(current)</span></a> <!--href="/"-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"   id="news" >News <span class="sr-only">(current)</span></a> <!--href="/news"--> 
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Elite</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" id= "squad">Squad</a>
+              <a class="dropdown-item" id="preseason" >Preseason</a>
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id= "college">College <span class="sr-only">(current)</span></a>             
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="development">Development<span class="sr-only">(current)</span></a>            
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="other">Other<span class="sr-only">(current)</span></a>            
+          </li>
+          <%if (user) { %>
+          <!--<li class="nav-item">
+            <a class="nav-link" href="/users/dashboard">Dashboard<span class="sr-only">(current)</span></a>            
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="/users/logout">Logout<span class="sr-only">(current)</span></a>  <!--CHANGE TO ID-->           
+          </li>          
+          <% } else{%>
+          <li class="nav-item">
+            <a class="nav-link" id='login'>Login<span class="sr-only">(current)</span></a> <!--href="/users/login"-->           
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" id='register'>Register<span class="sr-only">(current)</span></a>            <!-- href="/users/register"-->
+          </li>
+          <% } %>
+        </ul>
+         <%if (user) { %> 
+            <button type="button" class="btn btn-outline-light" id="btn-edit">Edit Page</button>
+         <% } %>
+      </div>
+    </nav>
+
+
+    <div class="float-sm">
+      <div class="fl-fl float-fb">
+        <i class="fa fa-facebook fa-2x"></i>
+        <a href="https://www.facebook.com/DurhamUniversityBadmintonClub/" target="_blank"> Like DUBadC!</a>
+      </div>
+      <div class="fl-fl float-tw">
+          <i class="fa fa-twitter  fa-2x"></i>
+          <a href="https://twitter.com/dubadc?lang=en/" target="_blank">Follow DUBadC!</a>
+      </div>
+      <div class="fl-fl float-ig">
+        <i class="fa fa-instagram fa-2x"></i>
+        <a href="https://www.instagram.com/durham_badminton/" target="_blank">Follow DUBADC!</a>
+      </div>
+
+      <div class="fl-fl float-fbTD">
+        <i class="fa fa-facebook fa-2x"></i>
+        <a href="https://www.facebook.com/teamdurham/" target="_blank"> Team Durham</a>
+      </div>
+      <div class="fl-fl float-twTD">
+          <i class="fa fa-twitter  fa-2x"></i>
+          <a href="https://twitter.com/teamdurham?lang=en/" target="_blank">Team Durham</a>
+      </div>
+      <div class="fl-fl float-igTD">
+        <i class="fa fa-instagram fa-2x"></i>
+        <a href="https://www.instagram.com/team.durham/" target="_blank">Team Durham</a>
+      </div>
+       <div class="fl-fl float-glTD">
+        <i class="fa fa-globe fa-2x"></i>
+        <a href="https://www.teamdurham.com/" target="_blank">Team Durham</a>
+
+      </div>
+    </div>
+
+        <!--<script type="text/javascript" src="/jsFiles/editpage.js"></script>-->
+   <%- body %>
+  </body> 
+  <!--<script src="/ejs.js"></script>-->
+ <!-- <script src="/ejs-file-loader.js"></script>-->
+
+  
+<script>
+  $("#home").click(function(){
+    $.ajax({url: "/home", success: function(result){
+    updatePage(result.isShared);
+   $("#heading").load('/ejsFiles/home.ejs');     
+    }});
+  });
+
+  $("#news").click(function(){
+    $.ajax({url: "/news", success: function(result){
+    updatePage(result.isShared);
+   $("#format").load('/ejsFiles/news.ejs');     
+    }});
+  });
+
+   $("#squad").click(function(){
+    $.ajax({url: "/squad", success: function(result){
+    updatePage(result.isShared);
+   $("#format").load('/ejsFiles/squad.ejs');     
+    console.log('here');
+    }});
+  });
+
+  $("#preseason").click(function(){
+    $.ajax({url: "/preseason", success: function(result){
+    updatePage(result.isShared);
+  $("#format").load('/ejsFiles/preseason.ejs');     
+    }});
+  });
+
+  $("#college").click(function(){
+    $.ajax({url: "/college", success: function(result){
+    updatePage(result.isShared);
+  $("#format").load('/ejsFiles/college.ejs');     
+    }});
+  });
+
+  $("#development").click(function(){
+    $.ajax({url: "/development", success: function(result){
+    updatePage(result.isShared);
+  $("#format").load('/ejsFiles/development.ejs');     
+    }});
+  });
+
+  $("#other").click(function(){
+    $.ajax({url: "/other", success: function(result){
+    updatePage(result.isShared);
+  $("#format").load('/ejsFiles/other.ejs');     
+    }});
+  });
+
+   $("#login").click(function(){
+    $.ajax({url: "/login", success: function(result){
+    updatePage(result.isShared);
+    $("#format").load('/ejsFiles/login.ejs');     
+    }});
+  });
+
+
+  $("#register").click(function(){
+    $.ajax({url: "/register", success: function(result){
+    updatePage(result.isShared);
+    $("#format").load('/ejsFiles/register.ejs');     
+    }});
+  });
+
+</script>
+
+<script>
+  function updatePage(isShared) {
+    $("#heading").html(""); 
+    if (isShared ==true){
+      $("#heading").append('<link rel="stylesheet" href="/cssFiles/shared.css">');
+      $("#heading").append('<div class="rectangle" ><h1>Durham University<br>Badminton Club</h1></div>');
+    }
+    $("#format").html("");
+  }
+</script>
+
+   <!-- yield here or something-->
+   <!--<script src="/jsFiles/main.js"></script>-->
+
+</html>
+

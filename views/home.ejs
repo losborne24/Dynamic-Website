@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/cssFiles/home.css">        
+
+<!--<div class="rectangle"><h1>Durham University<br>Badminton Club</h1></div>-->
+<!--Enter Unique Page Stuff Here VVV--> 
+<!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+<div id="title" class="slide header">
+  <article>
+    <h1><b>DURHAM UNIVERSITY<br> BADMINTON CLUB </b></h1>
+  </article>
+  <video autoplay loop id="video-background" muted plays-inline>
+    <source src="/vidFiles/temp.mp4" type="video/mp4">
+  </video> 
+  <div class='hero' id='hero'>
+    <div class='scroll-icon' id='scroll-icon'>
+      <span class='arrow1'></span>       
+      <span class='arrow2'></span>
+    </div>
+  </div>
+</div>
+  <div class='section'>
+    <div class='col-left' id='col-left'>
+      <p id="home_t1"></p>
+      <button type="button" class="btn btn-outline-dark" id="btn-edit-home-t1" style="visibility: hidden;">Edit Text</button>            
+    </div>
+
+    <div class='col-right1' id='col-right1'>
+      <div class='col-right1-overlay'></div>
+      <video autoplay loop id="video-two" muted plays-inline>
+      <source src="/vidFiles/bear.mp4" type="video/mp4"></video>
+    </div>
+
+    <div class='col-right2' id='col-right2'>
+      <div class='col-right2-overlay'></div>
+      <video autoplay loop id="video-three" muted plays-inline>
+      <source src="/vidFiles/loop2.mp4" type="video/mp4"></video> 
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+   edit = true;
+   buttonClicked();
+  $('#home_t1').contentinit("home_t1","Badminton at Durham University is enjoyed by players of all standards, from social clubs in the colleges right up to competitive inter-university competitions played by the elite squad. DUBadC oversees all badminton played at the university and often gets involved with other clubs within the local community. Whatever your interest, there will be an opportunity for you to play badminton during your time at Durham.<br><br>Are you interested in playing badminton for the university?<br><br>Preseason:<br><br>Preseason is the first port of call for new players interested in joining the squad. This consists of two weeks of badminton and social activities with the current elite squad the week before Freshers week. This year preseason will run from 17th-28th September.<br><br>Trials:<br><br>Trials to join the elite squad for the 2018/19 season will be held at the Graham Sports Centre, Maiden Castle. Men's trials will be held on Friday 5th October 20:00-22:00 and women's trials on Saturday 6th October 9:00-11:00.<br><br>Questions regarding badminton at Durham University can be sent to: <br> Club President, Tom Davies: thomas.p.davies@durham.ac.uk <br> Women's Captain, Joshmyn Bong: joshmyn.bong@durham.ac.uk <br> Men's Captain, Jack Richings: jack.richings@durham.ac.uk.<br>");
+    $("#btn-edit-home-t1").click(btn_home_t1_clicked);
+</script>
+
+ <!-- <p id="t1">Badminton at Durham University is enjoyed by players of all standards, from social clubs in the colleges right up to competitive inter-university competitions played by the elite squad. DUBadC oversees all badminton played at the university and often gets involved with other clubs within the local community. Whatever your interest, there will be an opportunity for you to play badminton during your time at Durham.<br><br>Are you interested in playing badminton for the university?<br><br>Preseason is the first port of call for new players interested in joining the squad. This consists of two weeks of badminton and social activities with the current elite squad the week before Freshers week. This year preseason will run from 17th-28th September.<br><br>More info: <a href="/preseason">Preseason</a><br><br>Trials to join the elite squad for the 2018/19 season will be held at the Graham Sports Centre, Maiden Castle. Men's trials will be held on Friday 5th October 20:00-22:00 and women's trials on Saturday 6th October 9:00-11:00.<br><br>More info: <a href="/news">Trials </a> <br><br>Questions regarding badminton at Durham University can be sent to: <br> Club President, Tom Davies: thomas.p.davies@durham.ac.uk <br> Women's Captain, Joshmyn Bong: joshmyn.bong@durham.ac.uk <br> Men's Captain, Jack Richings: jack.richings@durham.ac.uk.<br> </p> -->

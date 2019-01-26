@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/cssFiles/preseason.css">
+
+  <div class='section'>
+    <div class='col-left' id='col-left'>
+        <p id="preseason_t1"></p>
+      <button type="button" class="btn btn-outline-dark" id="btn-edit-preseason-t1" style="visibility: hidden;">Edit Text</button>  
+     
+    </div>
+    <div class='col-right1' id='col-right1'>
+      <div class='col-right1-overlay'></div>
+      <video autoplay loop id="video-two" muted plays-inline height="480px" width="270px">
+      <source src="/vidFiles/preseason1.mp4" type="video/mp4" ></video>
+    </div>
+    <div class='col-right2' id='col-right2'>
+      <div class='col-right2-overlay'></div>
+      <video autoplay loop id="video-three" muted plays-inline height="480px" width="270px">
+      <source src="/vidFiles/preseason2.mp4" type="video/mp4" ></video>
+    </div>
+  </div>
+<script >
+  edit = true;
+   buttonClicked();
+  $('#preseason_t1').contentinit("preseason_t1","Preseason is an opportunity for the existing squad and a number of potential new members to train together before the start of the academic year and prepare for the upcoming season. It is held during the fortnight before Freshers Week, and will run this year from the 17th – 28th September 2018.<br><br>Over the two weeks the players participate in coached training sessions, organised by both external coaches and the team captains, as well as several strength and conditioning (S&C) sessions. Although intensive, this is a great way to improve fitness and playing standards after the long summer.<br><br>However, preseason is not just about hard work! The fortnight also serves as a great social experience in which the squad looks to form a strong bond and team spirit. Each day of skill and fitness sessions will be followed by a social event. These include quiz nights, meals out, film nights, fancy-dress themed nights out and much more! These activities give everyone a chance to catch up after the summer break and allow new players to get to know the existing squad.<br><br>The first week of preseason is usually reserved for returning members. Incoming freshers or current students who indicate an interest in competitive badminton will be asked to attend the second week of training. During this time the new players take part in all of the activities and are assessed alongside the rest of the squad. Freshers may stay in the house of a current squad member and will have the valuable opportunity to explore Durham before freshers week begins.<br><br>Please note that attending preseason does not guarantee any of the players a place on the squad! Trials will be held shortly after freshers week and all squad members for the upcoming season will be newly selected then.<br><br>Any questions regarding preseason may be directed to one of our club captains:<br>Joshmyn Bong: joshmyn.bong@durham.ac.uk<br>Jack Richings: jack.richings@durham.ac.uk<br><br>");
+    $("#btn-edit-preseason-t1").click(btn_preseason_t1_clicked);
+
+</script>
