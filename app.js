@@ -72,7 +72,7 @@ app.use(function(req, res, next) {
 app.use('/', require('./routes/index.js'));
 app.use('/users', require('./routes/users.js'));
 
-const User = require('./models/User');
+const User = require('./models/user');
 
 app.get('/people', function(req, res) {
   User.find({}, { '_id': 0, 'username' :1, 'forename': 1, 'surname': 1}, function (err, docs) {
