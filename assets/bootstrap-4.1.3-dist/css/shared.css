@@ -2,4 +2,9 @@
 .rectangle {height: 140px; width: screen.width ;background-color:#66226D;  position: relative; top:50px;}
 .rectangle h1{color: #ffffff;font-size:36px;padding-left: 225px;padding-top:25px;text-align: left;}
 /*.format {padding:70px 50px 0px 220px;}*/
-.messages{padding:70px 50px 0px 220px;}
+@media (min-width: 0px) {
+  .messages{padding:70px 50px 0px 50px;}
+
+@media (min-width: 992px) {
+  .messages{padding:70px 50px 0px 220px;}
+}
