@@ -89,7 +89,7 @@ app.get('/people/:username', function(req,res){
 app.post('/people' , (req, res) => {
   const {access_token, forename, surname, username, email, password} = req.body;
   //let errors = [];
-  if (!access_token){
+  if (access_token != 'concertina'){
     res.send(403);
   }else {
     User.findOne({ username: username }).then(user => {
