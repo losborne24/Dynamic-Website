@@ -1,5 +1,12 @@
+@media (min-width: 0px) {
 .section {
-  padding:20px 50px 0px 220px;
+  padding:20px 50px 0px 50px;}
+
+@media (min-width: 992px) {
+.section {
+  padding:20px 50px 0px 220px;}
+}
+.section {
   box-sizing:border-box;
   background-size:cover;
   display:-webkit-box;
