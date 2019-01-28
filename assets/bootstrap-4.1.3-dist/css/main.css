@@ -36,6 +36,7 @@ body {
   .ml-md-auto{
     margin-left: auto!important;
   }
+  
 }
 /* Floating Social Media Bar Style Starts Here */
 
@@ -46,7 +47,7 @@ body {
   width: 195px;
   position: fixed;
   left: -150px;
-  z-index: 1000;
+  z-index: 100;
   font: normal normal 10px Arial;
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -73,6 +74,16 @@ body {
   vertical-align: top!important;
  /* padding-left: 50px;*/
 }
+@media (min-width: 0px) {
+  .float-fb { top: 50px; background: #000000;}
+.float-tw { top: 105px; background: #000000;}
+.float-ig { top: 160px; background: #000000;}
+.float-fbTD { top: 270px; background: #7E317B;}
+.float-twTD { top: 325px; background: #7E317B;}
+.float-igTD { top: 380px; background: #7E317B;}
+.float-glTD { top: 435px; background: #7E317B;}
+}
+@media (min-width: 992px) {
 
 .float-fb { top: 200px; background: #000000;}
 .float-tw { top: 255px; background: #000000;}
@@ -81,7 +92,7 @@ body {
 .float-twTD { top: 475px; background: #7E317B;}
 .float-igTD { top: 530px; background: #7E317B;}
 .float-glTD { top: 585px; background: #7E317B;}
-
+}
 
 
 .btn-dark{
