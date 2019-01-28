@@ -1,6 +1,5 @@
 
 .cd-form .fieldset {  position: relative;}
-.fa-lg { position: absolute;  left: 15px;  top: 50%;  transform: translateY(-50%);  color: #111111;}
 .cd-form input.full-width {  width: 100%;}
 .cd-form input.has-border:focus {  border-color: #111111;  outline: none;}
 .cd-form-message {
@@ -23,5 +22,6 @@
   }
   .cd-form-message {
     padding: 20px 20px 0;
-  }
+  }.fa-lg { position: absolute;  left: 15px;  top: 50%;  transform: translateY(-50%);  color: #111111;}
+
 }
