@@ -2,7 +2,7 @@ Assignment: Web Programming
 
 A single-page web application for Durham University Badminton Club built using express.js.
 
-To run: `npm start`
+To run: `$ npm start`
 
 Specification:
 - Construct a dynamic web-site for a domain of your choosing
