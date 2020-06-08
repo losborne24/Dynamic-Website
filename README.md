@@ -14,4 +14,6 @@ Specification:
 
 Full details of the specification can be found [here](https://github.com/stevenaeola/gitpitch/blob/master/prog/WP_assignment_1819/PITCHME.md).
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IYziMox9FF0/0.jpg)](https://www.youtube.com/watch?v=IYziMox9FF0)
+Two minute demostration:
+
+[![Visual demostration](./images/demo.png)](https://www.youtube.com/watch?v=IYziMox9FF0?style=centerme)
