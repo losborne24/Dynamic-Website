@@ -13,3 +13,5 @@ Specification:
 - Server to be deployed both locally (for testing) and in cloud
 
 Full details of the specification can be found [here](https://github.com/stevenaeola/gitpitch/blob/master/prog/WP_assignment_1819/PITCHME.md).
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IYziMox9FF0/0.jpg)](https://www.youtube.com/watch?v=IYziMox9FF0)
