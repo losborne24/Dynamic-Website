@@ -1,0 +1,12 @@
+.navbar {background-color: #111111;}
+
+/*.format {padding:70px 50px 0px 220px;}*/
+@media (min-width: 0px) {
+  .messages{padding:70px 50px 0px 50px;}
+.rectangle {height: 140px; width: 100% ;background-color:#66226D;  position: relative; top:50px;}
+.rectangle h1{color: #ffffff;font-size:32px;padding-left: 50px;padding-top:25px;text-align: left;}
+@media (min-width: 992px) {
+  .messages{padding:70px 50px 0px 220px;}
+  .rectangle {height: 140px; width: 100% ;background-color:#66226D;  position: relative; top:50px;}
+.rectangle h1{color: #ffffff;font-size:36px;padding-left: 225px;padding-top:25px;text-align: left;}
+}
